@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launchpad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <div class="logo-bg"><i class="fa-solid fa-rocket"></i></div>
+        <h1>Launchpad</h1>
+    </div>
+    
+    <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search ideas...">  
+    </div>
+    <div class="user-img">
+        <img src="images/user-img.jpg" alt="User Image" class="user-img">
+    </div>
+   </header> 
+   <div class="layout">
+    <aside class="sidebar">
+        <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house nav-icon"></i>All Ideas</a></li>
+      <li><a href="categories.html"><i class="fa-regular fa-folder nav-icon"></i>Categories</a></li>
+      <li><a href="#"><i class="fa-solid fa-arrow-trend-up nav-icon"></i>Trending</a></li>
+      <li><a href="#"><i class="fa-regular fa-user nav-icon"></i>My Ideas</a></li>
+    </ul>
+  </aside>
+  <main>
+    <div>
+        <h4>Back to ideas</h4>
+    </div>
+    <form>
+        <div class="form-group">
+            <label>Idea Title *</label>
+            <input type="text" placeholder="e.g., AI-Powered Code Review Assistant">
+        </div>
+
+        <div class="form-group">
+            <label>Category *</label>
+            <select>
+                <option>Select a category</option>
+                <option>Technology</option>
+                <option>Health</option>
+                <option>Education</option>
+                <option>Finance</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Short Description *</label>
+            <textarea placeholder="A brief summary of your idea (2-3 sentences)"></textarea>
+            <div class="helper-text">
+                This will appear in the idea feed preview
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Full Description *</label>
+            <textarea placeholder="Provide a detailed description of your idea, including key features, target audience, and potential impact."></textarea>
+            <div class="helper-text">
+                Explain your idea in detail
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="button" class="btn btn-cancel">Cancel</button>
+            <button type="submit" class="btn btn-submit">Submit Idea</button>
+        </div>
+
+    </form>
+</div>
+    </form>
+  </main>
+  </div>
+  </body>
+  </html>

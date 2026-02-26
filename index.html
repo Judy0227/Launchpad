@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launchpad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <div class="logo-bg"><i class="fa-solid fa-rocket"></i></div>
+        <h1>Launchpad</h1>
+    </div>
+    
+    <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search ideas...">  
+    </div>
+    <div class="user-img">
+        <img src="images/user-img.jpg" alt="User Image" class="user-img">
+    </div>
+   </header> 
+   <div class="layout">
+    <aside class="sidebar">
+        <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house nav-icon"></i>All Ideas</a></li>
+      <li><a href="categories.html"><i class="fa-regular fa-folder nav-icon"></i>Categories</a></li>
+      <li><a href="#"><i class="fa-solid fa-arrow-trend-up nav-icon"></i>Trending</a></li>
+      <li><a href="#"><i class="fa-regular fa-user nav-icon"></i>My Ideas</a></li>
+    </ul>
+  </aside>
+  <main>
+    <h2>Discover Ideas</h2>
+    <div>
+        <select>
+            <option value="all">All Categories</option>
+            <option value="tech">Tech</option>
+            <option value="health">Health</option>
+            <option value="education">Education</option>
+       </select>
+        <select>
+            <option value="newest">Newest</option>
+            <option value="trending">Trending</option>
+            <option value="most-voted">Most Voted</option>
+        </select>
+    </div>
+    <div class="card">
+        <div class="icon">
+            <i class="fa-regular fa-house"></i>
+            <p>234</p>
+        </div>
+        <div>
+            <div class="topic">
+                <h3>AI-Powered Code Review Assistant</h3>
+                <span class="category">Developer tools</span>
+            </div>
+            <p>An intelligent tool that automatically reviews pull requests, identifies potential bugs, suggests improvements, and ensures code quality standards are met across the entire codebase.</p>
+            <div class="comments">
+                <span><i class="fa-regular fa-comment"></i> 45 comments</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>by Sarah Chen</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>2 hours ago</span>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="icon">
+            <i class="fa-regular fa-house"></i>
+            <p>189</p>
+        </div>
+        <div>
+            <div class="topic">
+                <h3>Sustainable Fashion Marketplace</h3>
+                <span class="category">E-commerce</span>
+            </div>
+            <p>A platform connecting eco-conscious consumers with verified sustainable fashion brands. Features carbon footprint tracking, material transparency, and ethical manufacturing verification.</p>
+            <div class="comments">
+                <span><i class="fa-regular fa-comment"></i> 32 comments</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>by Marcus Johnson</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>5 hours ago</span>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="icon">
+            <i class="fa-regular fa-house"></i>
+            <p>156</p>
+        </div>
+        <div>
+            <div class="topic">
+                <h3>Remote Team Wellness Platform</h3>
+                <span class="category">Health & Wellness</span>
+            </div>
+            <p>An intelligent tool that automatically reviews pull requests, identifies potential bugs, suggests improvements, and ensures code quality standards are met across the entire codebase.</p>
+            <div class="comments">
+                <span><i class="fa-regular fa-comment"></i> 28 comments</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>by Emilia Rodriguez</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>8 hours ago</span>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="icon">
+            <i class="fa-regular fa-house"></i>
+            <p>142</p>
+        </div>
+        <div>
+            <div class="topic">
+                <h3>Smart Home Energy Optimizer</h3>
+                <span class="category">Smart Home</span>
+            </div>
+            <p>IoT solution that learns your energy usage patterns and automatically adjusts smart home devices to minimize electricity costs while maintaining comfort.</p>
+            <div class="comments">
+                <span><i class="fa-regular fa-comment"></i> 19 comments</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>by David Kim</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>12 hours ago</span>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="icon">
+            <i class="fa-regular fa-house"></i>
+            <p>127</p>
+        </div>
+        <div>
+            <div class="topic">
+                <h3>Local Food Network App</h3>
+                <span class="category">Food & Beverage</span>
+            </div>
+            <p>Connect home cooks with neighbors to share homemade meals, reduce food waste, and build community. Features dietary filters, rating system, and secure payments.</p>
+            <div class="comments">
+                <span><i class="fa-regular fa-comment"></i> 21 comments</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>by Priya Pabal</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>1 day ago</span>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="icon">
+            <i class="fa-regular fa-house"></i>
+            <p>96</p>
+        </div>
+        <div>
+            <div class="topic">
+                <h3>Freelancer Financial Dashboard</h3>
+                <span class="category">Finance</span>
+            </div>
+            <p>An intelligent tool that automatically reviews pull requests, identifies potential bugs, suggests improvements, and ensures code quality standards are met across the entire codebase.</p>
+            <div class="comments">
+                <span><i class="fa-regular fa-comment"></i> 15 comments</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>by Alex Turner</span>
+                <span class="desc"><i class="fa-solid fa-circle"></i>1 day ago</span>
+            </div>
+        </div>
+    </div>
+  </main>
+   </div>
+   
+</body>
+</html>
