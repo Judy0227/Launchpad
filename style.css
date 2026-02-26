@@ -29,19 +29,24 @@ body {
 }
 input {
     border: 1px solid #E5E7EB;
-    width: 440px;
     height: 30px;
     border-radius: 10px;
     padding: 4px 10px 4px 30px;
 }
+input::placeholder {
+    padding-left: 1rem;
+    font-size: 12px;
+}
 .search-bar {
     position: relative;
+    
 }
 .fa-magnifying-glass {
     position: absolute;
-    left: 10px;
+    left: 2px;
     top: 50%;
     transform: translateY(-50%);
+    margin-right: 2rem;
 }
 .user-img {
     width: 30px;
@@ -94,6 +99,20 @@ main {
     padding: 1rem 6rem;
     flex: 1;
 }
+.filter-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.filter {
+    border: 1px solid #E5E7EB;
+    height: 30px;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #4A5565;
+}
 .card {
     border-radius: 10px;
     background-color: white;
@@ -139,6 +158,7 @@ main {
 }
 .comments {
     display: flex;
+    align-items: center;
     gap: 15px;
     margin-top: 0.8rem;
     font-weight: 200;
@@ -149,10 +169,43 @@ main {
 }
 .desc {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
 }
+.close-btn {
+    display: none;
+    cursor: pointer;
+}
 
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: #4F39F6;
+    color: white;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    text-decoration: none;
+    font-size: 22px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.fab:hover {
+    transform: scale(1.1);
+    background-color: #1557c0;
+}
 /*categories page*/
 .category-container {
     display: grid;
@@ -319,9 +372,245 @@ main {
     background-color: #FDF2F8;
     color: #E60076;
 }
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.heading h4 {
+    font-size: 18px;
+}
+/* ==================== AUTHENTICATION FORMS ==================== */
+body.auth-page {
+    background-color: var(--bg-light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-container, .main-container {
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 480px;
+}
+
+.main-container {
+    background-color: white;
+    max-width: 450px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title {
+    text-align: center;
+    color: var(--dark-orange-text);
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.login-header {
+    padding: 40px 30px 40px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-header h1 {
+    color: #333;
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.login-form-box {
+    background-color: white;
+    border-radius: 14px;
+    padding: 60px 40px 40px;
+    box-sizing: border-box;
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dark-orange-text);
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px;
+    border: 1px solid #D1D5DC;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: white;
+    color: #333;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 0.95em;
+}
+
+.toggle-password i:hover {
+    color: #555;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.9em;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.signup-button, .login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4F39F6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px var(--shadow-button);
+}
+
+.signup-button:hover, .login-button:hover {
+    background-color: #1557c0;
+}
+
+.already-account, .account-question {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95em;
+    color: var(--dark-orange-text);
+}
+
+.login-link, .signup-link {
+    color: #4F39F6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link:hover, .signup-link:hover {
+    color: #1557c0;
+    text-decoration: underline;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: var(--dark-orange-text);
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+.messageDiv {
+    display: none;
+    background-color: #4F39F6;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    opacity: 0;
+    animation: fadeOut 7s forwards;
+}
 /* 🔥 Hide sidebar on small screens */
 @media (max-width: 768px) {
-  .sidebar {
+    .sidebar {
     display: none;
-  }
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    margin-top: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: -10px 0 10px #ccc;
+    z-index: 999;
+    }
+    li:hover {
+    background-color: #EEF2FF;
+    color: #4F39F6;
+    }
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    body {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 14px;
+        
+    }
+    .logo-bg {
+        margin-right: 0;
+    }
+    header, main {
+        padding: 1rem 5px;
+    }
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-items: center;
+    }
+    .form-container, .main-container {
+        padding: 5px;
+    }
 }
