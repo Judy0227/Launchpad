@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launchpad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <div class="logo-bg" onclick="showSidebar()"><i class="fa-solid fa-rocket"></i></div>
+        <h1>Launchpad</h1>
+    </div>
+    
+    <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search ideas...">  
+    </div>
+    <div class="user-img">
+        <img src="images/user-img.jpg" alt="User Image" class="user-img">
+    </div>
+   </header> 
+   <div class="layout">
+    <aside class="sidebar">
+        <ul>
+            <div class="close-btn" onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></div>
+      <li><a href="index.html"><i class="fa-solid fa-house nav-icon"></i>All Ideas</a></li>
+      <li><a href="categories.html"><i class="fa-regular fa-folder nav-icon"></i>Categories</a></li>
+      <li><a href="#"><i class="fa-solid fa-arrow-trend-up nav-icon"></i>Trending</a></li>
+      <li><a href="#"><i class="fa-regular fa-user nav-icon"></i>My Ideas</a></li>
+    </ul>
+  </aside>
+  <main>
+    <h2>Browse by Category</h2>
+    <p>Explore ideas organized by industry and focus area</p>
+    <div class="category-container">
+        
+        <div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="blue folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>Developer tools</h3>
+            <p>Tools and platforms for developers</p>
+            <p><b>156</b> ideas</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="t-blue folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>E-commerce</h3>
+            <p>Online shopping and retail solutions</p>
+            <p><b>89</b> ideas</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="green folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>Healthcare & Wellness</h3>
+            <p>Healthcare and fitness innovations</p>
+            <p><b>124</b> ideas</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="orange folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>Smart Home</h3>
+            <p>IoT and home automation</p>
+            <p><b>67</b> ideas</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="pink folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>Food & Beverages</h3>
+            <p>Culinary and dining experiences</p>
+            <p><b>93</b> ideas</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="green folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>Finance</h3>
+            <p>Financial services and fintech</p>
+            <p><b>112</b> ideas</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="blue folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>Education</h3>
+            <p>Learning platforms and edtech</p>
+            <p><b>145</b> ideas</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="pink folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>Productivity</h3>
+            <p>Tools to boost efficiency</p>
+            <p><b>178</b> ideas</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="orange folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>Entertainment</h3>
+            <p>Media, gaming, and content</p>
+            <p><b>71</b> ideas</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="t-blue folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>Social Network</h3>
+            <p>Community and communication</p>
+            <p><b>84</b> ideas</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="green folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>Travel & Tourism</h3>
+            <p>Travel experiences and booking</p>
+            <p><b>56</b> ideas</p>
+        </div><div class="category-card">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="l-green folder"><i class="fa-regular fa-folder cat-folder"></i></div>
+            <h3>Sustainability</h3>
+            <p>Environmental and eco solutions</p>
+            <p><b>102</b> ideas</p>
+        </div>
+    </div>
+  </main>
+</div>
+<script>
+        function showSidebar() {
+         const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+         const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
